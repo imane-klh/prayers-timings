@@ -8,11 +8,11 @@ import "moment/locale/fr";
 import { useEffect, useRef } from "react";
 
 // importation des photos
-const fajr = "../../public/assets/Salawat/fadjr.png";
-const dohr = "../../public/assets/Salawat/dohr.png";
-const asr = "../../public/assets/Salawat/asr.png";
-const maghreb = "../../public/assets/Salawat/maghreb.png";
-const icha = "../../public/assets/Salawat/icha.png";
+const fajr = "../../public/images/Salawat/fadjr.png";
+const dohr = "../../public/images/Salawat/dohr.png";
+const asr = "../../public/images/Salawat/asr.png";
+const maghreb = "../../public/images/Salawat/maghreb.png";
+const icha = "../../public/images/Salawat/icha.png";
 
 export default function Main() {
   const { wilaya, setWilaya, timings, leftTime, nextPrayer } =
