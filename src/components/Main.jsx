@@ -9,10 +9,10 @@ import { useEffect, useRef } from "react";
 
 // importation des photos
 const fajr = "/images/Salawat/fadjr.png";
-const dohr = "../../public/images/Salawat/dohr.png";
-const asr = "../../public/images/Salawat/asr.png";
-const maghreb = "../../public/images/Salawat/maghreb.png";
-const icha = "../../public/images/Salawat/icha.png";
+const dohr = "/images/Salawat/dohr.png";
+const asr = "/images/Salawat/asr.png";
+const maghreb = "/images/Salawat/maghreb.png";
+const icha = "/images/Salawat/icha.png";
 
 export default function Main() {
   const { wilaya, setWilaya, timings, leftTime, nextPrayer } =
@@ -84,7 +84,7 @@ export default function Main() {
       </Stack>
 
       <div>
-        <audio ref={audioRef} src="../../public/images/Adan/a6.mp3" autoPlay>
+        <audio ref={audioRef} src="/images/Adan/a6.mp3" autoPlay>
           Votre navigateur ne supporte pas l'élément audio.
         </audio>
       </div>
