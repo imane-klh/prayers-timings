@@ -8,7 +8,7 @@ import "moment/locale/fr";
 import { useEffect, useRef } from "react";
 
 // importation des photos
-const fajr = "../../public/images/Salawat/fadjr.png";
+const fajr = "/images/Salawat/fadjr.png";
 const dohr = "../../public/images/Salawat/dohr.png";
 const asr = "../../public/images/Salawat/asr.png";
 const maghreb = "../../public/images/Salawat/maghreb.png";
