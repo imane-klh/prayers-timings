@@ -84,7 +84,7 @@ export default function Main() {
       </Stack>
 
       <div>
-        <audio ref={audioRef} src="../../public/assets/Adan/a6.mp3" autoPlay>
+        <audio ref={audioRef} src="../../public/images/Adan/a6.mp3" autoPlay>
           Votre navigateur ne supporte pas l'élément audio.
         </audio>
       </div>
