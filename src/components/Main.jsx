@@ -8,11 +8,11 @@ import "moment/locale/fr";
 import { useEffect, useRef } from "react";
 
 // importation des photos
-const fajr = "../../public/images/Salawat/fadjr.png";
-const dohr = "../../public/images/Salawat/dohr.png";
-const asr = "../../public/images/Salawat/asr.png";
-const maghreb = "../../public/images/Salawat/maghreb.png";
-const icha = "../../public/images/Salawat/icha.png";
+const fajr = "/images/Salawat/fadjr.png";
+const dohr = "/images/Salawat/dohr.png";
+const asr = "/images/Salawat/asr.png";
+const maghreb = "/images/Salawat/maghreb.png";
+const icha = "/images/Salawat/icha.png";
 
 export default function Main() {
   const { wilaya, setWilaya, timings, leftTime, nextPrayer } =
@@ -34,13 +34,15 @@ export default function Main() {
         }}
       >
         <div>
-          <h2>{moment().format("MMMM D YYYY, h:mm")}</h2>
-          <h1>{wilaya}</h1>
+          <h2 style={{ color: "white" }}>
+            {moment().format("MMMM D YYYY, h:mm")}
+          </h2>
+          <h1 style={{ color: "white" }}>{wilaya}</h1>
         </div>
 
         <div>
-          <h2>{nextPrayer} dans</h2>
-          <h1>{leftTime}</h1>
+          <h2 style={{ color: "white" }}>{nextPrayer} dans</h2>
+          <h1 style={{ color: "white" }}>{leftTime}</h1>
         </div>
 
         <FormControl style={{ width: "20%", color: "white" }}>
@@ -53,6 +55,7 @@ export default function Main() {
             id="demo-simple-select"
             label="Wilaya"
             value={wilaya}
+            style={{ style: "white" }}
             onChange={(event) => {
               setWilaya(event.target.value);
             }}
